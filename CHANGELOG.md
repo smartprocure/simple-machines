@@ -1,3 +1,7 @@
+# 0.6.0
+
+- Bumped dependencies to fix security vulnerabilities.
+
 # 0.5.0
 
 -   Added `getElapsedTime` function.
