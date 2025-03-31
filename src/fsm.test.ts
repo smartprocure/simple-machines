@@ -134,7 +134,10 @@ describe('getElapsedTime', () => {
     await setTimeout(1000)
     state.change('starting')
     await setTimeout(1000)
-    expect(state.getElapsedTime()).toBeGreaterThanOrEqual(1000)
+    // Include a little bit of buffer time to account for the delay between
+    // changing the state and updating the start time, which is used to
+    // calculate elapsed time.
+    expect(state.getElapsedTime()).toBeGreaterThanOrEqual(990)
     expect(state.getElapsedTime()).toBeLessThan(2000)
   })
 })
