@@ -1,6 +1,6 @@
 {
   "name": "simple-machines",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Simple finite state machine that enables awaiting state changes",
   "repository": "git@github.com:smartprocure/simple-machines.git",
   "main": "dist/index.js",
@@ -39,17 +39,17 @@
     "importOrderSeparation": true
   },
   "dependencies": {
-    "debug": "^4.3.7",
+    "debug": "^4.4.3",
     "make-error": "^1.3.6",
-    "prom-utils": "^0.16.0"
+    "prom-utils": "^0.18.0"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.0",
     "@types/debug": "^4.1.12",
-    "@types/node": "^22.13.14",
-    "@typescript-eslint/eslint-plugin": "^8.15.0",
-    "prettier": "^3.3.3",
-    "typescript": "^5.6.3",
-    "vitest": "^3.1.1"
+    "@types/node": "^25.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.15"
   }
 }
