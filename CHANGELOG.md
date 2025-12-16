@@ -1,3 +1,7 @@
+# 0.8.0
+
+- Bumped dependencies.
+
 # 0.7.0
 
 - Bumped dependencies.

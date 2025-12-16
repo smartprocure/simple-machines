@@ -84,14 +84,14 @@ export function fsm<T extends string>(
    * Wait for state to change to one of `newStates`. Times out after 5 seconds
    * by default.
    */
-  const waitForChange = (...newStates: T[]) => {
+  const waitForChange = async (...newStates: T[]) => {
     debug(
       '%s waiting for state change from %s to %s',
       name,
       state,
       newStates.join(' or ')
     )
-    return waitUntil(() => newStates.includes(state), options)
+    await waitUntil(() => newStates.includes(state), options)
   }
 
   /**
